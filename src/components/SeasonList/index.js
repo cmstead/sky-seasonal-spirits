@@ -122,17 +122,24 @@ const spirits = {
 }
 
 export default function SeasonList () {
+  const totalSpiritCount = Object.keys(spirits).reduce(
+    (sum, seasonName) => sum + Object.keys(spirits[seasonName]).length,
+    0
+  )
   return (
-    <ol>
-      {Object.keys(spirits).map(seasonName => (
-        <li>
-          <strong>{seasonName}</strong>
-          <SpiritList
-            key={seasonName}
-            spirits={spirits[seasonName]}
-          ></SpiritList>
-        </li>
-      ))}
-    </ol>
+    <div>
+      <ol>
+        {Object.keys(spirits).map(seasonName => (
+          <li>
+            <strong>{seasonName}</strong>
+            <SpiritList
+              key={seasonName}
+              spirits={spirits[seasonName]}
+            ></SpiritList>
+          </li>
+        ))}
+      </ol>
+      <div>{totalSpiritCount}</div>
+    </div>
   )
 }
