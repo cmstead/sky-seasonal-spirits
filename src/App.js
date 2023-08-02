@@ -1,15 +1,17 @@
-import './App.css';
-import SeasonList from './components/SeasonList';
+import './App.css'
+import SeasonList from './components/SeasonList'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        
+    <div className='App'>
+      <header className='App-header'>
+        <h1>Traveling Spirit Checklist</h1>
       </header>
-      <SeasonList></SeasonList>
+      <body>
+        <SeasonList></SeasonList>
+      </body>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
