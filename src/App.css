@@ -54,6 +54,10 @@
   float: left;
 }
 
+.App body ol>li.season-complete {
+  background-color: #DDFFCC;
+}
+
 #ts-count {
   margin: 20px 45px;
 }

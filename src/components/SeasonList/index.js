@@ -28,23 +28,44 @@ export default function SeasonList () {
     0
   )
 
-  function sumCollectedSpirits(season) {
-    return Object.keys(season).reduce((sum, spiritName) => season[spiritName] ? sum + 1 : sum, 0)
-  };
+  function sumCollectedSpirits (season) {
+    return Object.keys(season).reduce(
+      (sum, spiritName) => (season[spiritName] ? sum + 1 : sum),
+      0
+    )
+  }
 
-  const collectedSpiritCount = Object.keys(spirits).reduce((sum, seasonName) => sum + sumCollectedSpirits(spirits[seasonName]), 0)
+  const collectedSpiritCount = Object.keys(spirits).reduce(
+    (sum, seasonName) => sum + sumCollectedSpirits(spirits[seasonName]),
+    0
+  )
+
+  function isSeasonComplete (spirits) {
+    return Object.keys(spirits).length === sumCollectedSpirits(spirits)
+  }
 
   return (
     <div>
-      <div id="ts-count"><strong>Traveling Spirits Collected:</strong> {collectedSpiritCount}/{totalSpiritCount}</div>
+      <div id='ts-count'>
+        <strong>Traveling Spirits Collected:</strong> {collectedSpiritCount}/
+        {totalSpiritCount}
+      </div>
       <ol>
         {Object.keys(spirits).map(seasonName => (
-          <li>
+          <li
+            className={
+              isSeasonComplete(spirits[seasonName])
+                ? 'season-complete'
+                : 'season-incomplete'
+            }
+          >
             <strong>{seasonName}</strong>
             <SpiritList
               key={seasonName}
               spirits={spirits[seasonName]}
-              update={(spiritName, value) => updateSelection(seasonName, spiritName, value)}
+              update={(spiritName, value) =>
+                updateSelection(seasonName, spiritName, value)
+              }
             ></SpiritList>
           </li>
         ))}
