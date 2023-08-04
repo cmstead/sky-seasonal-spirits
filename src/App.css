@@ -38,9 +38,15 @@
 }
 
 .App body {
-  width: 960px;
+  width: 75%;
   margin: 0 auto;
   text-align: left;
+}
+
+.App body .notice {
+  clear: both;
+  margin: 40px;
+  padding: 12px;
 }
 
 .App body ol>li {
@@ -56,6 +62,10 @@
 
 .App body ol>li.season-complete {
   background-color: #DDFFCC;
+}
+
+.App body li>label.not-visited {
+  font-style: italic;
 }
 
 #ts-count {

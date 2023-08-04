@@ -1,10 +1,23 @@
-export default function SpiritList ({ spirits, update }) {
+import { seasonData } from '../SeasonList/spiritData'
+
+export default function SpiritList ({ seasonName, spirits, update }) {
   return (
     <ul>
-      {Object.keys(spirits).map(spirit => (
-        <li key={spirit}>
-          <input type='checkbox' checked={spirits[spirit]} onClick={() => update(spirit, spirits[spirit])}></input>
-          {spirit}
+      {Object.keys(spirits).map(spiritName => (
+        <li key={spiritName}>
+          <input
+            type='checkbox'
+            id={spiritName}
+            name={spiritName}
+            checked={spirits[spiritName]}
+            onClick={() => update(spiritName, spirits[spiritName])}
+          ></input>
+          <label
+            htmlFor={spiritName}
+            className={seasonData[seasonName][spiritName].visited ? 'visited' : 'not-visited'}
+          >
+            {spiritName}
+          </label>
         </li>
       ))}
     </ul>

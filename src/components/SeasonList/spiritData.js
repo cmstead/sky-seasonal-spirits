@@ -1,121 +1,303 @@
-export const spiritData = {
-    Gratitude: {
-      'Greeting Shaman': false,
-      'Leaping Dancer': false,
-      'Provoking Performer': false,
-      'Saluting Protector': false,
-      'Sassy Drifter': false,
-      'Stretching Guru': false
+export const seasonData = {
+  Gratitude: {
+    'Greeting Shaman': {
+      visited: true
     },
-    Lightseekers: {
-      'Crab Whisperer': false,
-      'Doublefive Light Catcher': false,
-      'Laidback Pioneer': false,
-      'Piggyback Lightseeker': false,
-      'Shushing Light Scholar': false,
-      'Twirling Champion': false
+    'Leaping Dancer': {
+      visited: true
     },
-    Belonging: {
-      'Boogie Kid': false,
-      'Confetti Cousin': false,
-      'Hairtoussle Teen': false,
-      'Pleaful Parent': false,
-      'Sparkler Parent': false,
-      'Wise Grandparent': false
+    'Provoking Performer': {
+      visited: true
     },
-    Rhythm: {
-      'Admiring Actor': false,
-      'Festival Spin Dancer': false,
-      'Respectful Pianist': false,
-      'Thoughtful Director': false,
-      'Troupe Greeter': false,
-      'Troupe Juggler': false
+    'Saluting Protector': {
+      visited: true
     },
-    Enchantment: {
-      'Crab Walker': false,
-      'Indifferent Alchemist': false,
-      'Nodding Muralist': false,
-      'Playfighting Herbalist': false,
-      'Scarecrow Farmer': false,
-      'Snoozing Carpenter': false
+    'Sassy Drifter': {
+      visited: true
     },
-    Sanctuary: {
-      'Chill Sunbather': false,
-      'Grateful Shell Collector': false,
-      'Hiking Grouch': false,
-      'Jelly Whisperer': false,
-      'Rallying Thrillseeker': false,
-      'Timid Bookworm': false
+    'Stretching Guru': {
+      visited: true
+    }
+  },
+  Lightseekers: {
+    'Crab Whisperer': {
+      visited: true
     },
-    Prophecy: {
-      'Prophet of Air': false,
-      'Prophet of Earth': false,
-      'Prophet of Fire': false,
-      'Prophet of Water': false
+    'Doublefive Light Catcher': {
+      visited: true
     },
-    Dreams: {
-      'Bearhug Hermit': false,
-      'Dancing Performer': false,
-      'Peeking Postman': false,
-      'Spinning Mentor': false
+    'Laidback Pioneer': {
+      visited: true
     },
-    Assembly: {
-      'Baffled Botanist': false,
-      'Chuckling Scout': false,
-      'Daydream Forester': false,
-      'Marching Adventurer': false,
-      'Scaredy Cadet': false,
-      'Scolding Student': false
+    'Piggyback Lightseeker': {
+      visited: true
     },
-    'The Little Prince': {
-      'Beckoning Ruler': false,
-      'Gloating Narcissist': false,
-      'Slouching Soldier': false,
-      'Sneezing Geographer': false,
-      'Star Collector': false,
-      'Stretching Lamplighter': false
+    'Shushing Light Scholar': {
+      visited: true
     },
-    Flight: {
-      'Light Whisperer': false,
-      'Lively Navigator': false,
-      'Talented Builder': false,
-      'Tinkering Chimesmith': false
+    'Twirling Champion': {
+      visited: true
+    }
+  },
+  Belonging: {
+    'Boogie Kid': {
+      visited: true
     },
-    Abyss: {
-      'Anxious Angler': false,
-      'Bumbling Boatswain': false,
-      'Cackling Cannoneer': false,
-      'Ceasing Commodore': false
+    'Confetti Cousin': {
+      visited: true
     },
-    Performance: {
-      'Forgetful Storyteller': false,
-      'Frantic Stagehand': false,
-      'Mellow Musician': false,
-      'Modest Dancer': false
+    'Hairtoussle Teen': {
+      visited: true
     },
-    AURORA: {
-      'Mindful Miner': false,
-      'Running Wayfarer': false,
-      'Seed of Hope': false,
-      'Warrior of Love': false
+    'Pleaful Parent': {
+      visited: true
     },
-    Remembrance: {
-      'Bereft Veteran': false,
-      'Pleading Child': false,
-      'Tiptoeing Tea-Brewer': false,
-      'Wounded Warrior': false
+    'Sparkler Parent': {
+      visited: true
     },
-    Passage: {
-      'Melancholy Mope': false,
-      'Oddball Outcast': false,
-      'Overactive Overachiever': false,
-      'Tumbling Troublemaker': false
+    'Wise Grandparent': {
+      visited: true
+    }
+  },
+  Rhythm: {
+    'Admiring Actor': {
+      visited: true
     },
-    Moments: {
-      'Ascetic Monk': false,
-      'Jolly Geologist': false,
-      'Nightbird Whisperer': false,
-      'Reassuring Ranger': false
+    'Festival Spin Dancer': {
+      visited: true
+    },
+    'Respectful Pianist': {
+      visited: true
+    },
+    'Thoughtful Director': {
+      visited: true
+    },
+    'Troupe Greeter': {
+      visited: true
+    },
+    'Troupe Juggler': {
+      visited: true
+    }
+  },
+  Enchantment: {
+    'Crab Walker': {
+      visited: true
+    },
+    'Indifferent Alchemist': {
+      visited: true
+    },
+    'Nodding Muralist': {
+      visited: true
+    },
+    'Playfighting Herbalist': {
+      visited: true
+    },
+    'Scarecrow Farmer': {
+      visited: true
+    },
+    'Snoozing Carpenter': {
+      visited: true
+    }
+  },
+  Sanctuary: {
+    'Chill Sunbather': {
+      visited: true
+    },
+    'Grateful Shell Collector': {
+      visited: true
+    },
+    'Hiking Grouch': {
+      visited: true
+    },
+    'Jelly Whisperer': {
+      visited: true
+    },
+    'Rallying Thrillseeker': {
+      visited: true
+    },
+    'Timid Bookworm': {
+      visited: true
+    }
+  },
+  Prophecy: {
+    'Prophet of Air': {
+      visited: true
+    },
+    'Prophet of Earth': {
+      visited: true
+    },
+    'Prophet of Fire': {
+      visited: true
+    },
+    'Prophet of Water': {
+      visited: true
+    }
+  },
+  Dreams: {
+    'Bearhug Hermit': {
+      visited: true
+    },
+    'Dancing Performer': {
+      visited: false
+    },
+    'Peeking Postman': {
+      visited: true
+    },
+    'Spinning Mentor': {
+      visited: true
+    }
+  },
+  Assembly: {
+    'Baffled Botanist': {
+      visited: true
+    },
+    'Chuckling Scout': {
+      visited: true
+    },
+    'Daydream Forester': {
+      visited: true
+    },
+    'Marching Adventurer': {
+      visited: true
+    },
+    'Scaredy Cadet': {
+      visited: true
+    },
+    'Scolding Student': {
+      visited: true
+    }
+  },
+  'The Little Prince': {
+    'Beckoning Ruler': {
+      visited: true
+    },
+    'Gloating Narcissist': {
+      visited: true
+    },
+    'Slouching Soldier': {
+      visited: true
+    },
+    'Sneezing Geographer': {
+      visited: true
+    },
+    'Star Collector': {
+      visited: false
+    },
+    'Stretching Lamplighter': {
+      visited: false
+    }
+  },
+  Flight: {
+    'Light Whisperer': {
+      visited: false
+    },
+    'Lively Navigator': {
+      visited: false
+    },
+    'Talented Builder': {
+      visited: false
+    },
+    'Tinkering Chimesmith': {
+      visited: true
+    }
+  },
+  Abyss: {
+    'Anxious Angler': {
+      visited: false
+    },
+    'Bumbling Boatswain': {
+      visited: false
+    },
+    'Cackling Cannoneer': {
+      visited: false
+    },
+    'Ceasing Commodore': {
+      visited: false
+    }
+  },
+  Performance: {
+    'Forgetful Storyteller': {
+      visited: false
+    },
+    'Frantic Stagehand': {
+      visited: false
+    },
+    'Mellow Musician': {
+      visited: false
+    },
+    'Modest Dancer': {
+      visited: false
+    }
+  },
+  AURORA: {
+    'Mindful Miner': {
+      visited: false
+    },
+    'Running Wayfarer': {
+      visited: false
+    },
+    'Seed of Hope': {
+      visited: false
+    },
+    'Warrior of Love': {
+      visited: false
+    }
+  },
+  Remembrance: {
+    'Bereft Veteran': {
+      visited: false
+    },
+    'Pleading Child': {
+      visited: false
+    },
+    'Tiptoeing Tea-Brewer': {
+      visited: false
+    },
+    'Wounded Warrior': {
+      visited: false
+    }
+  },
+  Passage: {
+    'Melancholy Mope': {
+      visited: false
+    },
+    'Oddball Outcast': {
+      visited: false
+    },
+    'Overactive Overachiever': {
+      visited: false
+    },
+    'Tumbling Troublemaker': {
+      visited: false
+    }
+  },
+  Moments: {
+    'Ascetic Monk': {
+      visited: false
+    },
+    'Jolly Geologist': {
+      visited: false
+    },
+    'Nightbird Whisperer': {
+      visited: false
+    },
+    'Reassuring Ranger': {
+      visited: false
     }
   }
-  
+}
+
+function getSpiritDefaultValues (spiritData) {
+  return Object.keys(spiritData).reduce((result, spiritName) => {
+    result[spiritName] = false
+    return result
+  }, {})
+}
+
+export const spiritData = Object.keys(seasonData).reduce(
+  (result, seasonName) => {
+    result[seasonName] = getSpiritDefaultValues(seasonData[seasonName])
+    return result
+  },
+  {}
+)

@@ -1,5 +1,4 @@
 import './App.css'
-import MarkdownList from './components/MarkdownList'
 import SeasonList from './components/SeasonList'
 
 function App () {

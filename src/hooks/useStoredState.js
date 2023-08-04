@@ -1,18 +1,29 @@
 import { useState } from 'react'
 
+function mergeInitialState (storedState, initialState) {
+  if (typeof storedState === 'object' && typeof initialState === 'object') {
+    return {
+      ...initialState,
+      ...storedState
+    }
+  }
+
+  return storedState
+}
+
 export default function useStoredState (stateName, initialState) {
   const storedState = localStorage.getItem(stateName)
-  const pageState = storedState ? storedState : JSON.stringify(initialState)
+  const pageStateString = storedState
+    ? storedState
+    : JSON.stringify(initialState)
+  const pageState = mergeInitialState(JSON.parse(pageStateString), initialState)
 
-  const [state, setState] = useState(JSON.parse(pageState))
+  const [state, setState] = useState(pageState)
 
   function setStoredState (newState) {
-    console.log('setting new stored state', newState)
     localStorage.setItem(stateName, JSON.stringify(newState))
     setState(newState)
   }
-
-  console.log(state)
 
   return [state, setStoredState]
 }

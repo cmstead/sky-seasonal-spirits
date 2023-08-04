@@ -63,6 +63,7 @@ export default function SeasonList () {
             <strong>{seasonName}</strong>
             <SpiritList
               key={seasonName}
+              seasonName={seasonName}
               spirits={spirits[seasonName]}
               update={(spiritName, value) =>
                 updateSelection(seasonName, spiritName, value)
@@ -71,6 +72,7 @@ export default function SeasonList () {
           </li>
         ))}
       </ol>
+      <div class="notice">Spirits in <em>italics</em> have not visited yet</div>
       {/* <MarkdownList spiritList={spirits}></MarkdownList> */}
     </div>
   )
