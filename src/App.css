@@ -61,3 +61,10 @@
 #ts-count {
   margin: 20px 45px;
 }
+
+#markdown-list {
+  display: block;
+  width: 75%;
+  height: 400px;
+  margin: 25px auto;
+}

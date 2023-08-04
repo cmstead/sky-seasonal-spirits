@@ -1,6 +1,7 @@
 import SpiritList from '../SpiritList'
 import { spiritData } from './spiritData'
 import useStoredState from '../../hooks/useStoredState'
+import MarkdownList from '../MarkdownList'
 
 const initialState = spiritData
 
@@ -70,6 +71,7 @@ export default function SeasonList () {
           </li>
         ))}
       </ol>
+      {/* <MarkdownList spiritList={spirits}></MarkdownList> */}
     </div>
   )
 }
