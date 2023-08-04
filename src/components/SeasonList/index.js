@@ -72,7 +72,6 @@ export default function SeasonList () {
           </li>
         ))}
       </ol>
-      <div class="notice">Spirits in <em>italics</em> have not visited yet</div>
       {/* <MarkdownList spiritList={spirits}></MarkdownList> */}
     </div>
   )

@@ -10,6 +10,7 @@ export default function SpiritList ({ seasonName, spirits, update }) {
             id={spiritName}
             name={spiritName}
             checked={spirits[spiritName]}
+            disabled={!seasonData[seasonName][spiritName].visited}
             onClick={() => update(spiritName, spirits[spiritName])}
           ></input>
           <label

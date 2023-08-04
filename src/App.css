@@ -65,7 +65,7 @@
 }
 
 .App body li>label.not-visited {
-  font-style: italic;
+  color: #999;
 }
 
 #ts-count {
