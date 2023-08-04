@@ -37,19 +37,19 @@
   }
 }
 
-.App body {
+.App .body {
   width: 75%;
   margin: 0 auto;
   text-align: left;
 }
 
-.App body .notice {
+.App .body .notice {
   clear: both;
   margin: 40px;
   padding: 12px;
 }
 
-.App body ol>li {
+.App .body ol>li {
   display: block;
   height: 250px;
   width: 260px;
@@ -60,16 +60,24 @@
   float: left;
 }
 
-.App body ol>li.season-complete {
+.App .body ol>li.season-complete {
   background-color: #DDFFCC;
 }
 
-.App body li>label.not-visited {
+.App .body li>label.not-visited {
   color: #999;
 }
 
-#ts-count {
+#ts-count, #spirit-count {
   margin: 20px 45px;
+}
+
+#spirit-count {
+  margin-top: 0;
+}
+
+#ts-count {
+  margin-bottom: 0;
 }
 
 #markdown-list {

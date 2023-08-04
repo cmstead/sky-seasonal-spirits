@@ -9,7 +9,7 @@ export default function SpiritList ({ seasonName, spirits, update }) {
             type='checkbox'
             id={spiritName}
             name={spiritName}
-            checked={spirits[spiritName]}
+            defaultChecked={spirits[spiritName]}
             disabled={!seasonData[seasonName][spiritName].visited}
             onClick={() => update(spiritName, spirits[spiritName])}
           ></input>

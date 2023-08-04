@@ -7,9 +7,9 @@ function App () {
       <header className='App-header'>
         <h1>Traveling Spirit Checklist</h1>
       </header>
-      <body>
+      <div className="body">
         <SeasonList></SeasonList>
-      </body>
+      </div>
     </div>
   )
 }
