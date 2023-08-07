@@ -209,7 +209,7 @@ export const seasonData = {
       visited: false
     },
     'Cackling Cannoneer': {
-      visited: false
+      visited: true
     },
     'Ceasing Commodore': {
       visited: false
