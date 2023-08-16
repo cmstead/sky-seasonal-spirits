@@ -192,7 +192,7 @@ export const seasonData = {
       visited: false
     },
     'Lively Navigator': {
-      visited: false
+      visited: true
     },
     'Talented Builder': {
       visited: false
