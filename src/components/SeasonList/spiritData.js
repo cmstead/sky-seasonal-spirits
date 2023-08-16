@@ -229,6 +229,20 @@ export const seasonData = {
       visited: false
     }
   },
+  Shattering: {
+    'Ancient Light 1': {
+      visited: false
+    },
+    'Ancient Light 2': {
+      visited: false
+    },
+    'Ancient Darkness 1': {
+      visited: false
+    },
+    'Ancient Darkness 2': {
+      visited: false
+    }
+  },
   AURORA: {
     'Mindful Miner': {
       visited: false
