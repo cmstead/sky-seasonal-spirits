@@ -181,7 +181,7 @@ export const seasonData = {
       visited: true
     },
     'Star Collector': {
-      visited: false
+      visited: true
     },
     'Stretching Lamplighter': {
       visited: false
