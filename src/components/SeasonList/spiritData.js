@@ -195,7 +195,7 @@ export const seasonData = {
       visited: true
     },
     'Talented Builder': {
-      visited: false
+      visited: true
     },
     'Tinkering Chimesmith': {
       visited: true
