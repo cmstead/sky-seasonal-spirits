@@ -184,7 +184,7 @@ export const seasonData = {
       visited: true
     },
     'Stretching Lamplighter': {
-      visited: false
+      visited: true
     }
   },
   Flight: {
