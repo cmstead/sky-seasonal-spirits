@@ -298,6 +298,20 @@ export const seasonData = {
     'Reassuring Ranger': {
       visited: false
     }
+  },
+  Revival: {
+    'Vestige of a Deserted Oasis': {
+      visited: false
+    },
+    'Memory of a Lost Village': {
+      visited: false
+    },
+    'Echoes of an Abandoned Refuge': {
+      visited: false
+    },
+    'Remnant of a Forgotten Haven': {
+      visited: false
+    }
   }
 }
 
