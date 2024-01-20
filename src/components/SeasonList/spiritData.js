@@ -203,7 +203,7 @@ export const seasonData = {
   },
   Abyss: {
     'Anxious Angler': {
-      visited: false
+      visited: true
     },
     'Bumbling Boatswain': {
       visited: false
