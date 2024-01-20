@@ -312,6 +312,20 @@ export const seasonData = {
     'Remnant of a Forgotten Haven': {
       visited: false
     }
+  }, 
+  'Nine Colored Deer' : {
+    'Herb Gatherer': {
+      visited: false
+    },
+    'Hunter': {
+      visited: false
+    },
+    'Princess': {
+      visited: false
+    },
+    'Feudal Lord': {
+      visited: false
+    }
   }
 }
 
