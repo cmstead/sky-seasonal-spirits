@@ -189,7 +189,7 @@ export const seasonData = {
   },
   Flight: {
     'Light Whisperer': {
-      visited: false
+      visited: true
     },
     'Lively Navigator': {
       visited: true
