@@ -212,7 +212,7 @@ export const seasonData = {
       visited: true
     },
     'Ceasing Commodore': {
-      visited: false
+      visited: true
     }
   },
   Performance: {
@@ -220,7 +220,7 @@ export const seasonData = {
       visited: false
     },
     'Frantic Stagehand': {
-      visited: false
+      visited: true
     },
     'Mellow Musician': {
       visited: false
