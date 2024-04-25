@@ -138,7 +138,7 @@ export const seasonData = {
       visited: true
     },
     'Dancing Performer': {
-      visited: false
+      visited: true
     },
     'Peeking Postman': {
       visited: true
